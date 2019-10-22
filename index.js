@@ -10,5 +10,5 @@
  *   foo-bar
  */
 module.exports = function regexUsername () {
-  return /^([a-z\d]+-)*[a-z\d]+$/i;
+  return /^[a-z\d](?:[a-z\d]|(\.|-)(?=[a-z\d])){0,38}$/i;
 };
